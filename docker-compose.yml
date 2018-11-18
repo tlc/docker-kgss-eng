@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  master:
+    image: troyc/docker-kgss-eng
+    ports:
+      - "${PORT}:80"
+
+  worker:
+    image: troyc/docker-kgss-eng
+    command: -W -m master
+    volumes:
+      - ${MODELS_TEST_DIR}:/opt/test

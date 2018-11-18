@@ -1,5 +1,4 @@
-# FROM troyc/docker-kaldi-gstreamer-server
-FROM troyc/kgss
+FROM troyc/docker-kaldi-gstreamer-server
 MAINTAINER Troy Cauble <troycauble@gmail.com>
 
 RUN wget https://raw.githubusercontent.com/alumae/kaldi-gstreamer-server/master/sample_english_nnet2.yaml -P /opt
