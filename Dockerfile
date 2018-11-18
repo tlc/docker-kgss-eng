@@ -8,4 +8,4 @@ COPY start2.sh /opt/
 
 EXPOSE 80
 
-# ENTRYPOINT ["/opt/start2.sh"]
+ENTRYPOINT ["/opt/start2.sh"]
